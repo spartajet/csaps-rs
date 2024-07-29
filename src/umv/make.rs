@@ -27,7 +27,6 @@ impl<'a, T, D> CubicSmoothingSpline<'a, T, D>
     D: Dimension
 {
     pub(super) fn make_spline(&mut self) -> Result<()> {
-        // todo!();
         let one = T::one();
         let two = T::from::<f64>(2.0).unwrap();
         let three = T::from::<f64>(3.0).unwrap();
